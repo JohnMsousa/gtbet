@@ -7,7 +7,6 @@ import Services from "./components/Services";
 // Importar as páginas Sobre e Contato
 import Sobre from "./pages/Sobre";
 import Contato from "./pages/Contato";
-import Home from "./pages/Home"; // Supondo que Hero e Services serão usados aqui.
 
 function App() {
   return (
