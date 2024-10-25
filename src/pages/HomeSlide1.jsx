@@ -23,7 +23,7 @@ const HomeSlide1 = () => {
         <h2 className="mt-4 text-2xl font-semibold text-green-600">
           {product.price}
         </h2>
-        <button className="mt-6 px-6 py-3 bg-green-600 text-white font-medium text-lg rounded-lg hover:bg-green-700 transition duration-300">
+        <button className="bg-[#c92071] hover:bg-[#B0147A] text-white font-bold py-2 px-6 rounded shadow-lg hover:shadow-xl transition-all duration-300">
           Comprar Agora
         </button>
       </div>
