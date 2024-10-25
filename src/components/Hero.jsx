@@ -88,7 +88,7 @@ const Hero = () => {
                 <h3 className="text-yellow-300 text-3xl font-bold mb-4">
                   {slide.title}
                 </h3>
-                <p className="text-[#C92071] text-2xl font-bold mb-6">
+                <p className="text-[#c92072fd] text-2xl font-bold mb-6">
                   {slide.description}
                 </p>
                 <a href={slide.link} target="_blank" rel="noopener noreferrer">
