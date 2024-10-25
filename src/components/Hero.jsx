@@ -43,25 +43,25 @@ const Hero = () => {
   const slides = [
     {
       image: homeSlide1,
-      title: "Queima de stoque Fila 🔥",
+      title: "Queima de stoque Fila ",
       description: "10% off",
       link: "/produto/HomeSlide1",
     },
     {
       image: homeSlide2,
-      title: "Queima de stoque Puma 🔥",
+      title: "Queima de stoque Puma ",
       description: "10% off",
       link: "/produto/HomeSlide2",
     },
     {
       image: homeSlide3,
-      title: "Queima de stoque Adidas 🔥",
+      title: "Queima de stoque Adidas ",
       description: "10% off",
       link: "/produto/HomeSlide3",
     },
     {
       image: homeSlide4,
-      title: "Queima de stoque Nike 🔥",
+      title: "Queima de stoque Nike ",
       description: "10% off",
       link: "/produto/HomeSlide4",
     },
@@ -72,17 +72,13 @@ const Hero = () => {
       <div className="container mx-auto">
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div
-              key={index}
-              className="relative w-full h-[500px]" // Define a altura do slide
-            >
+            <div key={index} className="relative w-full h-[500px]">
               {/* Imagem de fundo */}
               <img
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-full object-cover"
               />
-
               {/* Conteúdo sobreposto */}
               <div className="absolute inset-0 bg-black bg-opacity-40 p-10">
                 <h3 className="text-yellow-300 text-3xl font-bold mb-4">
