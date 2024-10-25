@@ -45,25 +45,25 @@ const Hero = () => {
       image: homeSlide1,
       title: "Queima de stoque Fila 🔥",
       description: "10% off",
-      link: "/produto/tigrinho",
+      link: "/produto/homeSlide1",
     },
     {
       image: homeSlide2,
       title: "Queima de stoque Puma 🔥",
       description: "10% off",
-      link: "/produto/influencer",
+      link: "/produto/homeSlide2",
     },
     {
       image: homeSlide3,
       title: "Queima de stoque Adidas 🔥",
       description: "10% off",
-      link: "/produto/coelho",
+      link: "/produto/homeSlide3",
     },
     {
       image: homeSlide4,
       title: "Queima de stoque Nike 🔥",
       description: "10% off",
-      link: "/produto/dragao",
+      link: "/produto/homeSlide4",
     },
   ];
 
