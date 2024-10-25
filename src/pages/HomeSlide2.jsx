@@ -1,4 +1,4 @@
-import homeSlide2 from "../assets/imgSlider/homeSlide2.jpeg"; // Atualize o caminho conforme necessário
+import Slide2 from "../assets/imgSlider/homeSlide2.jpeg"; // Atualize o caminho conforme necessário
 
 const HomeSlide2 = () => {
   const product = {
@@ -12,7 +12,7 @@ const HomeSlide2 = () => {
     <div className="flex justify-center items-center p-8">
       <div className="w-1/3">
         <img
-          src={homeSlide2}
+          src={Slide2}
           alt={product.name}
           className="w-full h-auto rounded-lg shadow-lg"
         />

@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import Button from "./Button";
-import homeSlide1 from "../assets/imgSlider/homeSlide1.jpeg";
-import homeSlide2 from "../assets/imgSlider/homeSlide2.jpeg";
-import homeSlide3 from "../assets/imgSlider/homeSlide3.jpeg";
-import homeSlide4 from "../assets/imgSlider/homeSlide4.jpeg";
+import HomeSlide1 from "../assets/imgSlider/homeSlide1.jpeg";
+import HomeSlide2 from "../assets/imgSlider/homeSlide2.jpeg";
+import HomeSlide3 from "../assets/imgSlider/homeSlide3.jpeg";
+import HomeSlide4 from "../assets/imgSlider/homeSlide4.jpeg";
 
 // Setas de navegação
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -42,28 +42,28 @@ const Hero = () => {
 
   const slides = [
     {
-      image: homeSlide1,
+      image: HomeSlide1,
       title: "Queima de stoque Fila 🔥",
       description: "10% off",
-      link: "/produto/homeSlide1",
+      link: "/produto/HomeSlide1",
     },
     {
-      image: homeSlide2,
+      image: HomeSlide2,
       title: "Queima de stoque Puma 🔥",
       description: "10% off",
-      link: "/produto/homeSlide2",
+      link: "/produto/HomeSlide2",
     },
     {
-      image: homeSlide3,
+      image: HomeSlide3,
       title: "Queima de stoque Adidas 🔥",
       description: "10% off",
-      link: "/produto/homeSlide3",
+      link: "/produto/HomeSlide3",
     },
     {
-      image: homeSlide4,
+      image: HomeSlide4,
       title: "Queima de stoque Nike 🔥",
       description: "10% off",
-      link: "/produto/homeSlide4",
+      link: "/produto/HomeSlide4",
     },
   ];
 
