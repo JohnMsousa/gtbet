@@ -1,12 +1,7 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-
-// Importar as páginas Sobre e Contato
-import Sobre from "./pages/Sobre";
-import Contato from "./pages/Contato";
+import RoutesConfig from "./routes"; // Importa as rotas separadas
 
 function App() {
   return (
@@ -14,20 +9,8 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
-          {/* Definir as rotas aqui */}
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <Services />
-                </>
-              }
-            />
-            <Route path="/sobre" element={<Sobre />} />
-            <Route path="/contato" element={<Contato />} />
-          </Routes>
+          {/* Definir as rotas separadamente */}
+          <RoutesConfig />
         </main>
         <Footer />
       </div>

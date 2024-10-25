@@ -1,12 +1,11 @@
 import Slider from "react-slick";
 import Button from "./Button";
+import homeSlide1 from "../assets/imgSlider/homeSlide1.jpeg";
+import homeSlide2 from "../assets/imgSlider/homeSlide2.jpeg";
+import homeSlide3 from "../assets/imgSlider/homeSlide3.jpeg";
+import homeSlide4 from "../assets/imgSlider/homeSlide4.jpeg";
 
-import tigrinhoBanner from "../assets/tigrinhoBanner.jpg";
-import influencerBanner from "../assets/influencerBanner.jpg";
-import coelho from "../assets/coelho.jpg";
-import dragao from "../assets/dragao.jpg";
-
-// Importe os ícones de seta
+// Setas de navegação
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 // Componentes para as setas de navegação
@@ -30,40 +29,75 @@ const PrevArrow = ({ onClick }) => (
 
 const Hero = () => {
   const settings = {
-    dots: true, // Exibe os indicadores (bolinhas)
-    infinite: true, // Loop infinito
-    speed: 500, // Velocidade de transição
-    slidesToShow: 1, // Quantidade de slides visíveis
-    slidesToScroll: 1, // Quantos slides rolar por vez
-    autoplay: true, // Ativa autoplay
-    autoplaySpeed: 5000, // Tempo entre uma transição e outra (5 segundos)
-    nextArrow: <NextArrow />, // Passa o componente de seta próxima
-    prevArrow: <PrevArrow />, // Passa o componente de seta anterior
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
+  const slides = [
+    {
+      image: homeSlide1,
+      title: "Queima de stoque Fila 🔥",
+      description: "10% off",
+      link: "/produto/tigrinho",
+    },
+    {
+      image: homeSlide2,
+      title: "Queima de stoque Puma 🔥",
+      description: "10% off",
+      link: "/produto/influencer",
+    },
+    {
+      image: homeSlide3,
+      title: "Queima de stoque Adidas 🔥",
+      description: "10% off",
+      link: "/produto/coelho",
+    },
+    {
+      image: homeSlide4,
+      title: "Queima de stoque Nike 🔥",
+      description: "10% off",
+      link: "/produto/dragao",
+    },
+  ];
+
   return (
-    <section className="bg-blue-500 text-white py-20 relative">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4">Bem-vindo à GTBet!</h2>
-        <p className="text-lg mb-6">
-          A melhor plataforma para apostas esportivas. Aumente suas chances de
-          ganhar hoje mesmo!
-        </p>
-        <Slider {...settings} className="mb-6">
-          <div>
-            <img src={tigrinhoBanner} alt="Slide 1" className="mx-auto" />
-          </div>
-          <div>
-            <img src={influencerBanner} alt="Slide 2" className="mx-auto" />
-          </div>
-          <div>
-            <img src={coelho} alt="Slide 3" className="mx-auto" />
-          </div>
-          <div>
-            <img src={dragao} alt="Slide 4" className="mx-auto" />
-          </div>
+    <section className="bg-gray-100 py-20 mx-full">
+      <div className="container mx-auto">
+        <Slider {...settings}>
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className="relative w-full h-[500px]" // Define a altura do slide
+            >
+              {/* Imagem de fundo */}
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-full object-cover"
+              />
+
+              {/* Conteúdo sobreposto */}
+              <div className="absolute inset-0 bg-black bg-opacity-40 p-10">
+                <h3 className="text-yellow-300 text-3xl font-bold mb-4">
+                  {slide.title}
+                </h3>
+                <p className="text-[#C92071] text-2xl font-bold mb-6">
+                  {slide.description}
+                </p>
+                <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                  <Button text="Ver Ofertas" className="mt-4" />
+                </a>
+              </div>
+            </div>
+          ))}
         </Slider>
-        <Button text="Comece agora" />
       </div>
     </section>
   );

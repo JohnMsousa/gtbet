@@ -1,4 +1,3 @@
-import React from "react";
 import InfluencerImage from "../assets/embaixador.jpg"; // Importe a imagem corretamente
 
 const Sobre = () => {

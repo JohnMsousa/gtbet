@@ -9,7 +9,10 @@ const Header = () => {
     <header className="bg-black text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" onClick={handleHomeClick}>
-          <h1 className="text-3xl font-bold">GTBet</h1>
+          <h1 className="text-3xl font-bold">
+            Drip{" "}
+            <span className="text-3xl font-bold text-[#c92071]">Store</span>
+          </h1>
         </Link>
         <nav>
           <ul className="flex space-x-4">
